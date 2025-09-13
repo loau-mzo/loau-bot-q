@@ -1,0 +1,6 @@
+{
+  "BOT_TOKEN": "YOUR_TELEGRAM_BOT_TOKEN",
+  "GROQ_API_KEY": "YOUR_GROQ_API_KEY",
+  "ADMIN_ID": "YOUR_TELEGRAM_USER_ID",
+  "DB_NAME": "bot_database.db"
+}

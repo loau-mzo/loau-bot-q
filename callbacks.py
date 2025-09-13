@@ -1,12 +1,12 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes, ConversationHandler, CallbackQueryHandler, CommandHandler, MessageHandler, filters
-from modules.channel_manager import delete_channel as delete_channel_logic, get_channel_details, update_channel as update_channel_logic
-from modules.scheduler import schedule_channel_jobs
-from modules.admin_manager import get_admins, add_admin as add_admin_logic, remove_admin as remove_admin_logic
-from modules.ban_manager import get_banned_users, ban_user, unban_user
-from modules.ads_manager import view_ad, delete_ad, add_ad
+from channel_manager import delete_channel as delete_channel_logic, get_channel_details, update_channel as update_channel_logic
+from scheduler import schedule_channel_jobs
+from admin_manager import get_admins, add_admin as add_admin_logic, remove_admin as remove_admin_logic
+from ban_manager import get_banned_users, ban_user, unban_user
+from ads_manager import view_ad, delete_ad, add_ad
 from database import db
-from handlers.admin import get_backup, start_broadcast_flow, broadcast_receive_message, cancel_broadcast, BROADCAST_WAIT_MESSAGE
+from admin import get_backup, start_broadcast_flow, broadcast_receive_message, cancel_broadcast, BROADCAST_WAIT_MESSAGE
 
 # States
 (EDIT_SCHEDULE, EDIT_SIGNATURE, EDIT_TOPIC) = range(10, 13)

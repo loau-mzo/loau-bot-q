@@ -1,9 +1,9 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes, CommandHandler, ConversationHandler, MessageHandler, filters
 from database import db
-from utils.ai import generate_content
-from modules.channel_manager import add_channel as add_channel_logic, get_user_channels
-from modules.scheduler import schedule_channel_jobs
+from ai import generate_content
+from channel_manager import add_channel as add_channel_logic, get_user_channels
+from scheduler import schedule_channel_jobs
 
 # --- Conversation States ---
 WAIT_TOPIC = 0

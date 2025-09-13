@@ -1,12 +1,12 @@
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes, CommandHandler, ConversationHandler, MessageHandler, filters
-from utils.validators import admin_only
-from modules.admin_manager import add_admin as add_admin_logic, remove_admin as remove_admin_logic, get_admins as get_admins_logic
-from modules.ban_manager import ban_user as ban_user_logic, unban_user as unban_user_logic, get_banned_users as get_banned_users_logic
-from modules.ads_manager import add_ad as add_ad_logic, view_ad as view_ad_logic, delete_ad as delete_ad_logic
-from modules.broadcast_manager import broadcast_logic, BROADCAST_WAIT_MESSAGE
-from modules.backup_manager import get_backup as get_backup_logic, restore_backup as restore_backup_logic
+from validators import admin_only
+from admin_manager import add_admin as add_admin_logic, remove_admin as remove_admin_logic, get_admins as get_admins_logic
+from ban_manager import ban_user as ban_user_logic, unban_user as unban_user_logic, get_banned_users as get_banned_users_logic
+from ads_manager import add_ad as add_ad_logic, view_ad as view_ad_logic, delete_ad as delete_ad_logic
+from broadcast_manager import broadcast_logic, BROADCAST_WAIT_MESSAGE
+from backup_manager import get_backup as get_backup_logic, restore_backup as restore_backup_logic
 from database import db
 
 @admin_only

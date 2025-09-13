@@ -2,10 +2,10 @@ import logging
 import logging
 from telegram.ext import Application
 from config import BOT_TOKEN
-from handlers.user import register_user_handlers
-from handlers.admin import register_admin_handlers
-from handlers.callbacks import register_callback_handlers
-from modules.scheduler import setup_scheduler
+from user import register_user_handlers
+from admin import register_admin_handlers
+from callbacks import register_callback_handlers
+from scheduler import setup_scheduler
 
 # Configure logging
 logging.basicConfig(

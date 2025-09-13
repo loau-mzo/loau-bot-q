@@ -3,7 +3,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 from telegram.ext import Application
 from database import db
-from utils.ai import generate_content
+from ai import generate_content
 
 logger = logging.getLogger(__name__)
 
